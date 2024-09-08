@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #777;
+}
+
+.container {
+  display: flex;
+  width: 75vw;
+  height: 90.6vh;
+  background-color: white;
+}
+
+.image-section {
+  width: 50%;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.content-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 31.25px;
+  font-weight: 700;
+  line-height: 40.62px;
+  text-align: left;
+  padding: 0 120px;
+  margin-bottom: 17px;
+  margin-top: 83px;
+}
+
+.content-section p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  color: #777;
+  padding: 0 150px 0 120px;
+  margin-bottom: 33px;
+}
+
+.content-section a {
+  font-family: "Nunito", sans-serif;
+  font-size: 12.8px;
+  font-weight: 900;
+  line-height: 17.48px;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  /* Alt çizgiyi yerleştirmek için gerekli */
+  margin-bottom: 72px;
+  padding: 0 120px;
+}
+
+.content-section a::after {
+  content: '';
+  display: block;
+  width: 152px;
+  /* Çizginin genişliği */
+  height: 1px;
+  /* Çizginin kalınlığı */
+  background-color: black;
+  /* Çizginin rengi */
+  position: absolute;
+  left: 120;
+  bottom: -4px;
+  /* Çizgiyi yazının altına kaydırıyoruz, bu değeri artırarak daha da aşağı indirebilirsin */
+
+}
+
+
+.products-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-left: 120px;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  gap: 32px;
+}
+
+.product-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="radio"] {
+  margin-right: 0.1rem;
+}
+
+
+#first-option {
+  accent-color: #99C3CC;
+  outline: 0;
+}
+input[type=radio]#second-option {
+  accent-color: #CC9999;
+}
+input[type=radio]#third-option {
+  accent-color:  #CB99CC;
+}
+input[type=radio]#fourth-option {
+  accent-color: #A6CC99;
+}
+
+
+.product {
+  min-width: 200px;
+  margin-bottom: 60px;
+}
+
+.product .title {
+  font-family: "Nunito", sans-serif;
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 20.48px;
+  text-align: left;
+  color: black;
+  margin: 7px 0;
+}
+
+.product .price {
+  font-family: "Nunito", sans-serif;
+  font-size: 12.8px;
+  font-weight: 500;
+  line-height: 20.48px;
+  text-align: center;
+  color: black;
+
+}
+
+.product img {
+  width: 230px;
+  height: 310px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+
+.next-btn {
+  position: absolute;
+  right: 50px;
+  top: 35%;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #0000001A
+}
+
