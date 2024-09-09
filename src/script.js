@@ -29,7 +29,7 @@ products.map((product) => {
       <div class="title">${product.title}</div>
       <div class="product-bottom">
         <span class="price">${product.price}</span>
-        <div class"options">
+        <div class="options">
             <input type="radio" id="first-option" name="" value="" checked />
             <input type="radio" id="second-option" name="" value=""/>
             <input type="radio" id="third-option" name="" value=""/>
