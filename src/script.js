@@ -1,7 +1,7 @@
 const products = [
   {
     imgSrc: "/public/third-product.jpg",
-    title: "365 Signature Hoodie",
+    title: "Organic Skinny High Waist Jeans",
     price: "€33.95",
   },
   {
@@ -11,7 +11,7 @@ const products = [
   },
   {
     imgSrc: "/public/second-product.jpg",
-    title: "Organic Skinny Hoodie",
+    title: "Organic Skinny High Waist Jeans",
     price: "€33.95",
   },
 ];
@@ -31,9 +31,9 @@ products.map((product) => {
         <span class="price">${product.price}</span>
         <div class"options">
             <input type="radio" id="first-option" name="" value="" checked />
-            <input type="radio" id="second-option" name="" value="" checked />
-            <input type="radio" id="third-option" name="" value=""  checked/>
-            <input type="radio" id="fourth-option" name="" value=""  checked/>
+            <input type="radio" id="second-option" name="" value=""/>
+            <input type="radio" id="third-option" name="" value=""/>
+            <input type="radio" id="fourth-option" name="" value=""/>
             </div>
         </div>
       

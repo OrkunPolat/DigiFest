@@ -1,18 +1,26 @@
+@media (min-width: 601px) {
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #777;
+  }
+
+  .product {
+    min-width: 200px;
+    margin-bottom: 60px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #777;
-}
 
 .container {
   display: flex;
@@ -28,6 +36,7 @@ body {
 .image-section img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 
@@ -46,7 +55,7 @@ body {
   text-align: left;
   padding: 0 120px;
   margin-bottom: 17px;
-  margin-top: 83px;
+  margin-top: 82px;
 }
 
 .content-section p {
@@ -69,7 +78,6 @@ body {
   text-decoration: none;
   color: black;
   position: relative;
-  /* Alt çizgiyi yerleştirmek için gerekli */
   margin-bottom: 72px;
   padding: 0 120px;
 }
@@ -78,16 +86,11 @@ body {
   content: '';
   display: block;
   width: 152px;
-  /* Çizginin genişliği */
   height: 1px;
-  /* Çizginin kalınlığı */
   background-color: black;
-  /* Çizginin rengi */
   position: absolute;
   left: 120;
   bottom: -4px;
-  /* Çizgiyi yazının altına kaydırıyoruz, bu değeri artırarak daha da aşağı indirebilirsin */
-
 }
 
 
@@ -106,54 +109,66 @@ body {
   gap: 32px;
 }
 
-.product-bottom{
+.product-bottom {
   display: flex;
   justify-content: space-between;
 }
 
 input[type="radio"] {
-  margin-right: 0.1rem;
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-bottom: 1px;
 }
-
 
 #first-option {
-  accent-color: #99C3CC;
-  outline: 0;
+  width: 9px;
+  height: 9px;
+  box-shadow: 0 0 0 2px #000000;
+  background-color: #99C3CC;
+  margin-left: 20px;
+  margin-right: 0.45rem;
+
 }
+
 input[type=radio]#second-option {
-  accent-color: #CC9999;
+  box-shadow: 0 0 0 2px #CC9999;
+  background-color: #CC9999;
+  margin-right: 0.5rem;
 }
+
 input[type=radio]#third-option {
-  accent-color:  #CB99CC;
+  box-shadow: 0 0 0 2px #CB99CC;
+  background-color: #CB99CC;
+  margin-right: 0.5rem;
 }
+
 input[type=radio]#fourth-option {
-  accent-color: #A6CC99;
-}
+  box-shadow: 0 0 0 2px #A6CC99;
+  background-color: #A6CC99;
+  margin-right: 0.1rem;
 
-
-.product {
-  min-width: 200px;
-  margin-bottom: 60px;
 }
 
 .product .title {
   font-family: "Nunito", sans-serif;
   font-size: 12.8px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20.48px;
   text-align: left;
   color: black;
-  margin: 7px 0;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .product .price {
   font-family: "Nunito", sans-serif;
-  font-size: 12.8px;
-  font-weight: 500;
+  font-size: 12.5px;
+  font-weight: 700;
   line-height: 20.48px;
   text-align: center;
   color: black;
-
 }
 
 .product img {
@@ -166,11 +181,12 @@ input[type=radio]#fourth-option {
 
 .next-btn {
   position: absolute;
-  right: 50px;
-  top: 35%;
-  background-color: transparent;
+  right: 48px;
+  top: 31.5%;
   font-size: 1rem;
   cursor: pointer;
-  border: 1px solid #0000001A
+  padding: 10px 14px;
+  border: 1px solid #0000001a;
+  background-color: transparent;
 }
 
